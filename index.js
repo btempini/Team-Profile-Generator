@@ -64,7 +64,8 @@ var managerChoice = function () {
       } else if (data.managerChoice === "Add an intern.") {
         internQuestions();
       } else {
-        generateHTML(teamMembers);
+        const generatedResult = generateHTML(teamMembers);
+        writeHTMLFile(generatedResult);
       }
     });
 };
@@ -141,7 +142,7 @@ var internQuestions = function () {
       managerChoice();
     });
 };
-//function to write README file
+//function to write file
 const writeHTMLFile = (html) =>
   fs.writeFile("index.html", html, (err) =>
     err
