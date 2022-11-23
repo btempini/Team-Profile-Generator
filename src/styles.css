@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Codystar&family=Megrim&family=Quicksand:wght@300;600&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,13 +7,15 @@
 }
 
 nav {
-  background-color: palegoldenrod;
+  background-color: #81b29a;
 }
 
 nav h1 {
   text-align: center;
-  color: darkblue;
+  font-size: 48px;
+  color: #f2cc8f;
   padding: 20px;
+  font-family: "Megrim", cursive;
 }
 
 .container {
@@ -22,6 +26,41 @@ nav h1 {
 
 .card {
   width: 250px;
-  border: 1px solid black;
+  border: 3px solid #3d405b;
   border-radius: 10px;
+  margin-top: 50px;
+}
+
+.cardTitle {
+  background-color: #e07a5f;
+  color: grey;
+  text-align: center;
+  border-radius: 7px 7px 0 0;
+  color: #3d405b;
+  border-bottom: 1px solid #3d405b;
+}
+
+.cardTitle h2 {
+  padding: 8px;
+  font-size: 36px;
+  font-family: "Codystar", cursive;
+}
+
+.cardTitle h3 {
+  margin-bottom: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+}
+
+.contents {
+  background-color: #81b29a;
+  color: #3d405b;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  border-radius: 0 0 7px 7px;
+  padding: 10px;
+}
+
+.contents p {
+  padding: 5px;
 }
