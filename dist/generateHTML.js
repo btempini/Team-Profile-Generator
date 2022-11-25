@@ -44,7 +44,7 @@ function generateHTML(data) {
           <div class="contents">
             <p>ID: ${data[i].id}</p>
             <p>Email: <a href="mailto:${data[i].email}">${data[i].email}</a></p>
-            <p>Github: <a href="${data[i].github}" target="_blank">${data[i].github}</a></p>
+            <p>Github: <a href="https://www.${data[i].github}" target="_blank">${data[i].github}</a></p>
           </div>
         </div>
       `;
